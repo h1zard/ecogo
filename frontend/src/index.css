@@ -1,0 +1,26 @@
+.auth-container,
+.items-grid,
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.item-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.item-card:hover {
+  background: #f0f0f0;
+}
