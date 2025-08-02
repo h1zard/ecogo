@@ -15,7 +15,7 @@ func SetupRouter() *gin.Engine {
 	// Add CORS middleware to allow cross-origin requests from the frontend.
 	// Make sure the AllowOrigins matches your frontend's URL (e.g., http://localhost:5173 for Vite).
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173", "https://deep-shopping-cart.vercel.app"},
+		AllowOrigins:     []string{"http://localhost:5173", "https://ecogo-eta.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Authorization", "Content-Type"},
 		ExposeHeaders:    []string{"Content-Length"},
